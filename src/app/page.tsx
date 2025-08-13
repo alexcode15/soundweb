@@ -45,7 +45,8 @@ export default function Home() {
       />
       {/* Dark overlay for video */}
       <div className="absolute inset-0 bg-black/30 z-10 pointer-events-none" />
-      <div className="relative z-20">
+      <main className="relative z-20">
+        {/* Main content starts here */}
         <header className="w-full flex flex-col items-center px-2 pt-2 pb-1 md:flex-row md:justify-between md:items-center md:pl-8 md:pr-12 md:pt-8 md:pb-8 md:gap-0">
           {/* Mobile: Centered title at top */}
           <div className="w-full flex flex-col items-center md:hidden">
@@ -137,7 +138,7 @@ export default function Home() {
           </button>
         </div>
         {/* ...existing code... */}
-      </div>
+      </main>
       {selectedMedia && (
         <div
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 px-2"
@@ -165,13 +166,13 @@ export default function Home() {
           </div>
         </div>
       )}
-    {/* Footer and credits */}
-    {/* Credits bottom left */}
-    <footer className="fixed bottom-0 left-0 pb-1 pl-1 z-30 text-left w-full">
-  <p className="text-white text-xs font-light opacity-70 px-2">
-        Created and curated by Alessandra Indino · Supported by Clinica dei Paesi and Comune di Vaglio Basilicata · © 2025 Soundweb · Background: <a href="https://www.vecteezy.com/free-videos/water" target="_blank" rel="noopener noreferrer" className="underline">Vecteezy</a>
-      </p>
-    </footer>
-  </div>
+      {/* Footer and credits */}
+      {/* Credits bottom left */}
+      <footer className="fixed bottom-0 left-0 pb-1 pl-1 z-30 text-left w-full">
+        <p className="text-white text-xs font-light opacity-70 px-2">
+          Created and curated by Alessandra Indino · Supported by Clinica dei Paesi and Comune di Vaglio Basilicata · © 2025 Soundweb · Background: <a href="https://www.vecteezy.com/free-videos/water" target="_blank" rel="noopener noreferrer" className="underline">Vecteezy</a>
+        </p>
+      </footer>
+    </div>
   );
 }
