@@ -14,7 +14,7 @@ const mockMedia: MediaItem[] = [
   { id: 4, type: "image", src: "/Siamo un popolo.png", alt: "Siamo un popolo" },
   { id: 3, type: "audio", src: "/sounds-grid/Assiolo.wav", alt: "l'assiolo" },
   { id: 5, type: "image", src: "/Qualsiasi.png", alt: "Qualsiasi" },
-  { id: 6, type: "audio", src: "/sounds-grid/caffe parole.wav", alt: "Caffè parole" },
+  { id: 6, type: "audio", src: "/sounds-grid/caffe parole.wav", alt: "il caffè" },
   { id: 7, type: "image", src: "/A volte.png", alt: "A volte" },
   { id: 8, type: "image", src: "/il vento forte.png", alt: "il vento forte" },
   { id: 10, type: "image", src: "/adesso.png", alt: "adesso" },

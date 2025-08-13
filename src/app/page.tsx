@@ -90,7 +90,7 @@ export default function Home() {
           </Link>
           {/* Mobile menu bar */}
           {/* Mobile menu bar: single row for all items, no wrap */}
-          <nav className="w-full flex justify-center items-center md:hidden mt-1" style={{maxWidth: '100vw', margin: '0 auto'}}>
+          <nav className="w-full flex justify-center items-center md:hidden mt-1 menu-entrance" style={{maxWidth: '100vw', margin: '0 auto', animationDelay: '1.2s'}}>
             <div className="flex flex-nowrap justify-center gap-1 w-auto overflow-x-auto">
               {menu.map((item) => (
                 <Link
@@ -105,7 +105,7 @@ export default function Home() {
             </div>
           </nav>
           {/* Desktop menu bar */}
-          <nav className="hidden md:flex flex-wrap gap-12 pr-4 mt-4 w-auto justify-end">
+          <nav className="hidden md:flex flex-wrap gap-12 pr-4 mt-4 w-auto justify-end menu-entrance" style={{animationDelay: '1.2s'}}>
             {menu.map((item) => (
               <Link
                 key={item.href}

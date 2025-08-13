@@ -25,12 +25,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@keyframes fadein-letter {
-  from { opacity: 0; transform: translateY(20px);}
-  to { opacity: 1; transform: translateY(0);}
+@keyframes typing-letter {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 .animate-fadein-letter {
-  animation: fadein-letter 0.6s forwards;
+  animation: typing-letter 0.3s forwards;
 }
 
 .underline-animation {
@@ -49,4 +49,21 @@ body {
 .underline-animation:hover::after,
 .underline-animation:focus::after {
   transform: scaleX(1);
+}
+
+@keyframes menu-slide-in {
+  from { opacity: 0; transform: translateX(40px);}
+  to { opacity: 1; transform: translateX(0);}
+}
+.menu-entrance {
+  opacity: 0;
+  animation: menu-slide-in 0.6s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+
+@keyframes intro-fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-intro-fadein {
+  animation: intro-fadein 1.2s cubic-bezier(0.4,0,0.2,1) forwards;
 }
