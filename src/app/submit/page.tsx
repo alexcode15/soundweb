@@ -1,16 +1,6 @@
 "use client";
-import { useEffect, useState } from "react";
 import Link from "next/link";
-
 export default function Submit() {
-  const [showHeader, setShowHeader] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowHeader(window.scrollY > 40);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   const menu = [
     { label: "About", href: "/about" },
     { label: "Binaural Composition", href: "/binaural" },
