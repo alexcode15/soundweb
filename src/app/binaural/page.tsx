@@ -133,8 +133,8 @@ export default function BinauralComposition() {
     audioRef.current.volume = volume;
   }
   return (
-    <div className="fixed inset-0 z-50 bg-white text-black min-h-screen w-full">
-  <header className="w-full flex flex-col items-center px-2 pt-2 pb-1 md:flex-row md:justify-between md:items-center md:pl-8 md:pr-12 md:pt-8 md:pb-8 md:gap-0">
+  <div className="fixed inset-0 z-50 bg-white text-black min-h-screen w-full overflow-y-auto">
+      <header className="w-full flex flex-col items-center px-2 pt-2 pb-1 md:flex-row md:justify-between md:items-center md:pl-8 md:pr-12 md:pt-8 md:pb-8 md:gap-0">
         {/* Mobile: Centered title at top */}
         <div className="w-full flex flex-col items-center md:hidden">
           <Link href="/" className="text-black text-[2.2rem] font-serif font-bold tracking-widest mb-2 mt-2 text-center">
@@ -178,10 +178,10 @@ export default function BinauralComposition() {
           </nav>
         </div>
       </header>
-      <main className="flex flex-1 w-full h-full pt-24 px-8 gap-8 items-start">
-        {/* Mobile: Title, Play Button + Headphone, then Text */}
-        <div className="w-full flex flex-col items-center md:hidden justify-center">
-          <h2 className="text-3xl font-bold mt-24 mb-8 text-center w-full">Binaural Composition</h2>
+      <main className="flex flex-1 w-full h-full pt-24 px-8 gap-8 items-start justify-center">
+        {/* Mobile: Unified layout */}
+        <div className="flex flex-col items-center justify-center w-full max-w-xl mx-auto md:hidden">
+          <h2 className="text-3xl font-bold mt-4 mb-8 text-center w-full">Binaural Composition</h2>
           <div className="relative flex flex-col items-center w-full mb-4">
             <div className="relative flex items-center justify-center w-64 h-64 mb-4">
               <AnimatedBlob />
@@ -207,53 +207,63 @@ export default function BinauralComposition() {
               <span className="text-sm text-gray-400">Si consiglia l'ascolto in cuffia</span>
             </div>
           </div>
-          <div className="max-w-xl text-sm text-gray-700 text-center mb-16 mx-4">
-            <p className="mb-6 font-serif">
-              This composition is made from sounds and words shared by participants. Together, they form an acoustic collage, drifting between memories and present-day experiences. The piece is shaped by the act of listening as method, a process of attuning to what usually goes unnoticed, positioning sound as both document and expression.
-            </p>
-            <p className="mb-4 mt-8 text-gray-500 font-serif italic">
-              Questa composizione nasce dai suoni e dalle parole condivise dai partecipanti. Insieme formano un collage acustico, che si muove tra ricordi e vissuti attuali. Si propone l’ascolto come metodo, un processo di attenzione a ciò che di solito passa inosservato, in cui il suono diventa sia documento che espressione.<br /><br />
-              <span className="font-mono text-black not-italic text-xs">10 MIN</span>
-            </p>
+          <div className="max-w-xl text-base text-gray-700 text-center mb-16 mx-4">
+            <div className="mt-4 relative z-20">
+              <p className="mb-6 font-serif text-base text-black text-center">
+                This composition is made from sounds and words shared by participants. Together, they form an acoustic collage, drifting between memories and present-day experiences. The piece is shaped by the act of listening as method, a process of attuning to what usually goes unnoticed, positioning sound as both document and expression.
+              </p>
+              <p className="mb-4 mt-8 text-gray-700 font-serif italic text-center text-base">
+                Questa composizione nasce dai suoni e dalle parole condivise dai partecipanti. Insieme formano un collage acustico, che si muove tra ricordi e vissuti attuali. Si propone l’ascolto come metodo, un processo di attenzione a ciò che di solito passa inosservato, in cui il suono diventa sia documento che espressione.<br /><br />
+                <span className="font-mono text-black not-italic text-xs">10 MIN</span>
+              </p>
+              <div className="mb-16"></div>
+            </div>
           </div>
         </div>
-        {/* Desktop: Play, Blob, Headphone */}
-        <div className="hidden md:flex flex-col items-center justify-start w-full md:w-1/3 pt-12">
-          <div className="flex flex-col items-center w-full">
-            <div className="relative w-64 h-64 mb-4 flex items-center justify-center">
-              <AnimatedBlob />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <PlayButton onClick={handlePlayPause} isPlaying={isPlaying} />
+        {/* Desktop: Split layout */}
+        <div className="hidden md:flex w-full h-full max-w-6xl mx-auto flex-row items-start justify-center gap-8">
+          {/* Left: Play Button, Blob, Headphone */}
+          <div className="flex flex-col items-center justify-center w-1/2 min-w-[400px]">
+            <div className="relative flex flex-col items-center w-full">
+              <div className="relative flex items-center justify-center min-w-[256px] w-80 h-80 mb-4">
+                <AnimatedBlob />
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <div className="pointer-events-auto">
+                    <PlayButton onClick={handlePlayPause} isPlaying={isPlaying} />
+                  </div>
+                </div>
+              </div>
+              <audio
+                ref={audioRef}
+                src="/binaural.wav"
+                className="hidden"
+                onEnded={() => setIsPlaying(false)}
+                onTimeUpdate={handleTimeUpdate}
+                onLoadedMetadata={handleLoadedMetadata}
+              />
+              <div className="mt-2 text-gray-600 text-sm flex flex-col items-center mb-4">
+                <span className="flex items-center mb-1">
+                  <HeadphoneIcon />
+                  <span className="ml-2">Please listen with headphones</span>
+                </span>
+                <span className="text-sm text-gray-400">Si consiglia l'ascolto in cuffia</span>
               </div>
             </div>
-            <audio
-              ref={audioRef}
-              src="/binaural.wav"
-              className="hidden"
-              onEnded={() => setIsPlaying(false)}
-              onTimeUpdate={handleTimeUpdate}
-              onLoadedMetadata={handleLoadedMetadata}
-            />
-            <div className="mt-8 text-gray-600 text-sm flex flex-col items-center">
-              <span className="flex items-center mb-1">
-                <HeadphoneIcon />
-                <span className="ml-2">Please listen with headphones</span>
-              </span>
-              <span className="text-sm text-gray-400">Si consiglia l'ascolto in cuffia</span>
-            </div>
           </div>
-        </div>
-        {/* Right Side: Title and Text */}
-        <div className="flex flex-col items-center justify-start w-full md:items-start md:w-3/5 md:pl-16 md:pt-2">
-          <h2 className="hidden md:block text-3xl font-bold mb-16 text-left w-full">Binaural Composition</h2>
-          <div className="max-w-xl text-base text-gray-700">
-            <p className="mb-6 font-serif">
-              This composition is made from sounds and words shared by participants. Together, they form an acoustic collage, drifting between memories and present-day experiences. The piece is shaped by the act of listening as method, a process of attuning to what usually goes unnoticed, positioning sound as both document and expression.
-            </p>
-            <p className="mb-4 mt-8 text-gray-500 font-serif italic">
-              Questa composizione nasce dai suoni e dalle parole condivise dai partecipanti. Insieme formano un collage acustico, che si muove tra ricordi e vissuti attuali. Si propone l’ascolto come metodo, un processo di attenzione a ciò che di solito passa inosservato, in cui il suono diventa sia documento che espressione.<br /><br />
-              <span className="font-mono text-black not-italic text-xs">10 MIN</span>
-            </p>
+          {/* Right: Title and Text */}
+          <div className="flex flex-col items-start justify-start w-3/5 md:pl-8 md:pt-8">
+            <h2 className="text-3xl font-bold mb-8 text-left w-full">Binaural Composition</h2>
+            <div className="max-w-xl text-base text-gray-700">
+              <div className="mt-4">
+                <p className="mb-6 font-serif text-base text-black text-left">
+                  This composition is made from sounds and words shared by participants. Together, they form an acoustic collage, drifting between memories and present-day experiences. The piece is shaped by the act of listening as method, a process of attuning to what usually goes unnoticed, positioning sound as both document and expression.
+                </p>
+                <p className="mb-4 mt-8 text-gray-700 font-serif italic text-left text-base">
+                  Questa composizione nasce dai suoni e dalle parole condivise dai partecipanti. Insieme formano un collage acustico, che si muove tra ricordi e vissuti attuali. Si propone l’ascolto come metodo, un processo di attenzione a ciò che di solito passa inosservato, in cui il suono diventa sia documento che espressione.<br /><br />
+                  <span className="font-mono text-black not-italic text-xs">10 MIN</span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </main>
