@@ -69,7 +69,7 @@ export default function Submit() {
           <p className="mb-3 font-serif text-base md:text-base text-sm">
             Are you connected to Vaglio in some way, and living elsewhere?
             <br/>
-            This project is still growing. If you'd like to contribute a sound, a memory or reflection, you can do so here. All contribution will be part of the Soundweb project, a collection of sounds and words that connect the community across distance.
+            This project is still growing. If you&apos;d like to contribute a sound, a memory or reflection, you can do so here. All contribution will be part of the Soundweb project, a collection of sounds and words that connect the community across distance.
           </p>
           <hr className="my-8 border-gray-300 w-1/2 mx-auto" />
           <p className="text-gray-500 font-serif text-base md:text-base text-sm mb-12 text-center mt-3">
