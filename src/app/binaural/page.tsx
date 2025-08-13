@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 interface AudioPlayerBarProps {
   isPlaying: boolean;
   onPlayPause: () => void;
@@ -246,7 +246,7 @@ export default function BinauralComposition() {
                   <HeadphoneIcon />
                   <span className="ml-2">Please listen with headphones</span>
                 </span>
-                <span className="text-sm text-gray-400">Si consiglia l'ascolto in cuffia</span>
+                <span className="text-sm text-gray-400">Si consiglia l&apos;ascolto in cuffia</span>
               </div>
             </div>
           </div>
@@ -259,7 +259,7 @@ export default function BinauralComposition() {
                   This composition is made from sounds and words shared by participants. Together, they form an acoustic collage, drifting between memories and present-day experiences. The piece is shaped by the act of listening as method, a process of attuning to what usually goes unnoticed, positioning sound as both document and expression.
                 </p>
                 <p className="mb-4 mt-8 text-gray-700 font-serif italic text-left text-base">
-                  Questa composizione nasce dai suoni e dalle parole condivise dai partecipanti. Insieme formano un collage acustico, che si muove tra ricordi e vissuti attuali. Si propone l’ascolto come metodo, un processo di attenzione a ciò che di solito passa inosservato, in cui il suono diventa sia documento che espressione.<br /><br />
+                  Questa composizione nasce dai suoni e dalle parole condivise dai partecipanti. Insieme formano un collage acustico, che si muove tra ricordi e vissuti attuali. Si propone l&apos;ascolto come metodo, un processo di attenzione a ciò che di solito passa inosservato, in cui il suono diventa sia documento che espressione.<br /><br />
                   <span className="font-mono text-black not-italic text-xs">10 MIN</span>
                 </p>
               </div>
