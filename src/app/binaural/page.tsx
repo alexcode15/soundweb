@@ -204,7 +204,7 @@ export default function BinauralComposition() {
                 <HeadphoneIcon />
                 <span className="ml-2">Please listen with headphones</span>
               </span>
-              <span className="text-sm text-gray-400">Si consiglia l'ascolto in cuffia</span>
+              <span className="text-sm text-gray-400">Si consiglia l&apos;ascolto in cuffia</span>
             </div>
           </div>
           <div className="max-w-xl text-base text-gray-700 text-center mb-16 mx-4">
