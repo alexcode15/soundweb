@@ -72,7 +72,7 @@ export default function YourSounds() {
   {/* Mobile title and text, centered and aligned */}
   <div className="w-full flex flex-col items-center justify-center md:hidden">
     <div className="max-w-xl w-full mt-8 px-6 mb-12 flex flex-col items-center justify-center">
-  <h2 className="text-3xl font-bold mt-16 mb-8 text-center md:mt-24">Your Sounds</h2>
+  <h2 className="text-3xl font-bold -mt-6 mb-8 text-center md:mt-24">Your Sounds</h2>
       <p className="text-sm leading-relaxed text-black mb-8 text-center font-serif">
   Here you can find individual sounds and words contributed by people connected to Vaglio, even if living elsewhere. Each one is part of a sonic thread that links the community across distance.
       </p>
