@@ -63,8 +63,8 @@ export default function Submit() {
           </p>
           <hr className="my-8 border-gray-300 w-1/2 mx-auto" />
           <p className="text-gray-500 font-serif text-base md:text-base text-sm mb-12 text-center mt-3">
-            Sei legato a Vaglio in qualche modo, ma vivi altrove?<br/>
-            Questo progetto è in crescita. Se vuoi contribuire con un suono, un ricordo o una riflessione, puoi farlo qui. Tutti i contributi faranno parte di Soundweb, una raccolta di suoni e parole che collegano la comunità anche a distanza.
+            Hai un legame con Vaglio, ma vivi altrove?<br/>
+            Soundweb è un progetto in evoluzione: se desideri condividere un suono, un ricordo o una riflessione, puoi farlo qui. Ogni contributo arricchirà la raccolta di suoni e parole che unisce la comunità, anche a distanza.
           </p>
           <div className="w-full flex justify-center mt-8">
             <a
