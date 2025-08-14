@@ -55,7 +55,7 @@ export default function About() {
       </div>
     </header>
   <div className="max-w-2xl w-full relative mx-auto mt-8 px-20 mb-24">
-  <h2 className="text-3xl font-bold mt-16 mb-12 text-center md:mt-24 md:mb-24">About</h2>
+  <h2 className="text-3xl font-bold mt-16 mb-14 text-center md:mt-24 md:mb-24">About</h2>
   <p className="text-sm leading-relaxed text-black mb-12 text-justify font-serif md:text-base md:mb-16">
           Soundweb is a participatory sound art project created in collaboration with people from Vaglio Basilicata, especially those who now live elsewhere.
           Through interviews with participants living in Dublin, Brussels, Rotterdam, Chicago and beyond, this project explored the sonic traces of departure, return and the in-between. From these conversations emerged recurring themes of depopulation of peripheral areas, diasporic belonging, and the fluid identities shaped by movement and memory. Rooted in anthropological listening and sound ethnography, Soundweb invited participants to listen to their environments and record the sonic textures of their everyday lives.<br/><br/>
