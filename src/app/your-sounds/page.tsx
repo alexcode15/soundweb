@@ -74,10 +74,10 @@ export default function YourSounds() {
     <div className="max-w-xl w-full mt-8 px-6 mb-12 flex flex-col items-center justify-center">
       <h2 className="text-3xl font-bold mt-1 mb-8 text-center">Your Sounds</h2>
       <p className="text-sm leading-relaxed text-black mb-8 text-center font-serif">
-        Here you can find individual sounds and words contributed by people connected to Vaglio, even if living elsewhere. Each one is part of a sonic thread that links the community across distance.
+  Here you can find individual sounds and words contributed by people connected to Vaglio, even if living elsewhere. Each one is part of a sonic thread that links the community across distance.
       </p>
       <p className="text-gray-500 italic text-sm leading-relaxed text-center font-serif">
-        Qui puoi trovare suoni, testi e voci registrati e condivisi dai partecipanti.
+  Qui puoi trovare suoni, testi e voci registrati e condivisi dai partecipanti.
       </p>
     </div>
   </div>
