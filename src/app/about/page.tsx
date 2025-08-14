@@ -58,17 +58,17 @@ export default function About() {
   <h2 className="text-3xl font-bold mt-24 mb-24 text-center">About</h2>
   <p className="text-sm leading-relaxed text-black mb-16 text-justify font-serif md:text-base">
           Soundweb is a participatory sound art project created in collaboration with people from Vaglio Basilicata, especially those who now live elsewhere.
-          Through interviews with participants living in Dublin, Brussels, Rotterdam, Chicago and beyond, this project explored the sonic traces of departure, return and the in-between. From these conversations emerged recurring themes of depopulation of peripheral areas, diasporic belonging, and the fluid identities shaped by movement and memory. Rooted in anthropological listening and sound ethnography, Soundweb invited participants to not only share their stories, but to listen to their environments and the sonic textures of their everyday lives.<br/><br/>
-          What emerged is a rich tapestry of sounds, voices, and narratives that reflect the diverse experiences of those who have never really left. The project is a testament to the power of sound as a medium for connection, memory and identity.<br/><br/>
-          This project was created by Alessandra Indino, in collaboration with the community of Vaglio Basilicata. Supported by la Clinica dei Paesi.
+          Through interviews with participants living in Dublin, Brussels, Rotterdam, Chicago and beyond, this project explored the sonic traces of departure, return and the in-between. From these conversations emerged recurring themes of depopulation of peripheral areas, diasporic belonging, and the fluid identities shaped by movement and memory. Rooted in anthropological listening and sound ethnography, Soundweb invited participants to listen to their environments and record the sonic textures of their everyday lives.<br/><br/>
+          What emerged is a rich tapestry of sounds, voices and narratives, that reflect the diverse experiences of those who have never really left. The project delves into the power of sound as a medium for connection, memory and identity.<br/><br/>
+          The Soundweb project was created by Alessandra Indino, in collaboration with the community of Vaglio Basilicata. Supported by la Clinica dei Paesi and Luoghi d'ARTIfizio.
         </p>
   <hr className="my-12 border-gray-300" />
   <p className="text-gray-500 italic text-sm leading-relaxed text-justify font-serif italic md:text-base">
           Soundweb è un progetto di arte sonora partecipativa, realizzato in collaborazione con persone originarie di Vaglio Basilicata, oggi sparse in diverse parti del mondo.
-          Attraverso interviste a distanza con partecipanti che vivono a Dublino, Bruxelles, Rotterdam, Chicago e altrove, il progetto esplora le tracce sonore della partenza, del ritorno e dell’in-between. Dai racconti sono emersi temi ricorrenti quali l’appartenenza diasporica, le identità fluide costruite tra più luoghi e la complessa idea di casa. Radicato nell’ascolto antropologico e nell’etnografia sonora, Soundweb invita i partecipanti non solo a raccontarsi, ma ad ascoltare e registrare i propri ambienti e le texture sonore della vita quotidiana.<br/><br/>
-          Ne è emerso un ritratto acustico collettivo di Vaglio, uno spazio ibrido tra vicinanza e distanza, ricco di suoni, voci e narrazioni che riflettono le esperienze di chi, in fondo, non se n’è mai davvero andato. 
-          Il progetto è una testimonianza del potere del suono come mezzo di connessione, memoria e identità.<br/><br/>
-          Creato da Alessandra Indino, in collaborazione con la comunità di Vaglio Basilicata. Con il sostegno de la Clinica dei Paesi.
+          Attraverso interviste a distanza con partecipanti che vivono a Dublino, Bruxelles, Rotterdam, Chicago e altrove, il progetto esplora le tracce sonore della partenza, del ritorno e del liminale. Dai racconti, sono emersi temi ricorrenti quali l’appartenenza diasporica, le identità fluide costruite tra più luoghi e la complessa idea di casa. Radicato nell’ascolto antropologico e nell’etnografia sonora, Soundweb invita i partecipanti ad ascoltare, registrare e raccontarsi attraverso le texture sonore della vita quotidiana.<br/><br/>
+          Ne è emerso un ritratto acustico collettivo di Vaglio, uno spazio ibrido tra vicinanza e distanza, ricco di suoni, voci e narrazioni che riflettono le esperienze di chi, in fondo, non se n’è mai davvero andato.
+          Il progetto esplora il potere del suono come mezzo di connessione, memoria e identità.<br/><br/>
+          Creato da Alessandra Indino, in collaborazione con la comunità di Vaglio Basilicata. Con il sostegno de la Clinica dei Paesi e Luoghi d'ARTIfizio.
         </p>
       </div>
     </div>
