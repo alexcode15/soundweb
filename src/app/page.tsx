@@ -170,7 +170,7 @@ export default function Home() {
       {/* Credits bottom left */}
       <footer className="fixed bottom-0 left-0 pb-1 pl-1 z-30 text-left w-full">
         <p className="text-white text-xs font-light opacity-70 px-2">
-          Created and curated by Alessandra Indino · Supported by Clinica dei Paesi and Comune di Vaglio Basilicata · © 2025 Soundweb · Background: <a href="https://www.vecteezy.com/free-videos/water" target="_blank" rel="noopener noreferrer" className="underline">Vecteezy</a>
+          Created and curated by Alessandra Indino · Supported by Clinica dei Paesi and Luoghi d&#39;ARTIfizio · © 2025 Soundweb · Background: <a href="https://www.vecteezy.com/free-videos/water" target="_blank" rel="noopener noreferrer" className="underline">Vecteezy</a>
         </p>
       </footer>
     </div>
