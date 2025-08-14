@@ -181,7 +181,7 @@ export default function BinauralComposition() {
       <main className="flex flex-1 w-full h-full pt-24 px-8 gap-8 items-start justify-center">
         {/* Mobile: Unified layout */}
         <div className="flex flex-col items-center justify-center w-full max-w-xl mx-auto md:hidden">
-          <h2 className="text-3xl font-bold mt-2 mb-8 text-center w-full md:mt-24">Binaural Composition</h2>
+          <h2 className="text-3xl font-bold mt-0 mb-8 text-center w-full md:mt-24">Binaural Composition</h2>
           <div className="relative flex flex-col items-center w-full mb-4">
             <div className="relative flex items-center justify-center w-64 h-64 mb-4">
               <AnimatedBlob />
