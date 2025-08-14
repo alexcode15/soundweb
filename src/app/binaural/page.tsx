@@ -212,7 +212,7 @@ export default function BinauralComposition() {
               <p className="mb-6 font-serif text-sm md:text-base text-black text-center">
                 This composition is made from sounds and words shared by participants. Together, they form an acoustic collage, drifting between memories and present-day experiences. The piece is shaped by the act of listening as method, a process of attuning to what usually goes unnoticed, positioning sound as both document and expression.
               </p>
-              <p className="mb-4 mt-8 text-gray-700 font-serif italic text-center text-base">
+              <p className="mb-4 mt-8 text-gray-500 font-serif italic text-center text-sm md:text-base">
                 Questa composizione nasce dai suoni e dalle parole condivise dai partecipanti. Insieme formano un collage acustico, che si muove tra ricordi e vissuti attuali. La composizione nasce dall&apos;ascolto come metodo per innestare un processo di attenzione a ciò che di solito passa inosservato, in cui il suono è al contempo documento ed espressione.<br /><br />
                 <span className="font-mono text-black not-italic text-xs">10 MIN</span>
               </p>
