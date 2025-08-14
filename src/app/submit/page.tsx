@@ -53,7 +53,7 @@ export default function Submit() {
           </nav>
         </div>
       </header>
-      <main className="flex flex-col items-center justify-center p-8">
+  <main className="flex flex-col items-center justify-center mt-8 px-8">
   <h2 className="text-3xl font-bold mt-16 mb-16 md:mt-24 md:mb-24">Submit</h2>
         <div className="max-w-2xl text-sm text-gray-700 text-center mb-8 mx-4 md:mx-48">
           <p className="mb-3 font-serif text-base md:text-base text-sm">
