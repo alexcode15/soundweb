@@ -54,7 +54,7 @@ export default function Submit() {
         </div>
       </header>
   <main className="flex flex-col items-center justify-center mt-8 px-8">
-  <h2 className="text-3xl font-bold -mt-2 mb-16 md:mt-24 md:mb-24">Submit</h2>
+  <h2 className="text-3xl font-bold mt-0 mb-16 md:mt-24 md:mb-24">Submit</h2>
         <div className="max-w-2xl text-sm text-gray-700 text-center mb-8 mx-4 md:mx-48">
           <p className="mb-3 font-serif text-base md:text-base text-sm">
             Are you connected to Vaglio in some way, and living elsewhere?
