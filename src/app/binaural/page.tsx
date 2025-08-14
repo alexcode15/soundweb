@@ -209,7 +209,7 @@ export default function BinauralComposition() {
           </div>
           <div className="max-w-xl text-base text-gray-700 text-center mb-16 mx-4">
             <div className="mt-4 relative z-20">
-              <p className="mb-6 font-serif text-base text-black text-center">
+              <p className="mb-6 font-serif text-sm md:text-base text-black text-center">
                 This composition is made from sounds and words shared by participants. Together, they form an acoustic collage, drifting between memories and present-day experiences. The piece is shaped by the act of listening as method, a process of attuning to what usually goes unnoticed, positioning sound as both document and expression.
               </p>
               <p className="mb-4 mt-8 text-gray-700 font-serif italic text-center text-base">
@@ -255,7 +255,7 @@ export default function BinauralComposition() {
             <h2 className="text-3xl font-bold mb-8 text-left w-full">Binaural Composition</h2>
             <div className="max-w-xl text-base text-gray-700">
               <div className="mt-4">
-                <p className="mb-6 font-serif text-base text-black text-left">
+                <p className="mb-6 font-serif text-sm md:text-base text-black text-left">
                   This composition is made from sounds and words shared by participants. Together, they form an acoustic collage, drifting between memories and present-day experiences. The piece is shaped by the act of listening as method, a process of attuning to what usually goes unnoticed, positioning sound as both document and expression.
                 </p>
                 <p className="mb-4 mt-8 text-gray-700 font-serif italic text-left text-base">
