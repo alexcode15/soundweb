@@ -213,7 +213,7 @@ export default function BinauralComposition() {
                 This composition is made from sounds and words shared by participants. Together, they form an acoustic collage, drifting between memories and present-day experiences. The piece is shaped by the act of listening as method, a process of attuning to what usually goes unnoticed, positioning sound as both document and expression.
               </p>
               <p className="mb-4 mt-8 text-gray-700 font-serif italic text-center text-base">
-                Questa composizione nasce dai suoni e dalle parole condivise dai partecipanti. Insieme formano un collage acustico, che si muove tra ricordi e vissuti attuali. Si propone l’ascolto come metodo, un processo di attenzione a ciò che di solito passa inosservato, in cui il suono diventa sia documento che espressione.<br /><br />
+                Questa composizione nasce dai suoni e dalle parole condivise dai partecipanti. Insieme formano un collage acustico, che si muove tra ricordi e vissuti attuali. La composizione nasce dall&apos;ascolto come metodo per innestare un processo di attenzione a ciò che di solito passa inosservato, in cui il suono è al contempo documento ed espressione.<br /><br />
                 <span className="font-mono text-black not-italic text-xs">10 MIN</span>
               </p>
               <div className="mb-16"></div>
@@ -259,7 +259,7 @@ export default function BinauralComposition() {
                   This composition is made from sounds and words shared by participants. Together, they form an acoustic collage, drifting between memories and present-day experiences. The piece is shaped by the act of listening as method, a process of attuning to what usually goes unnoticed, positioning sound as both document and expression.
                 </p>
                 <p className="mb-4 mt-8 text-gray-700 font-serif italic text-left text-base">
-                  Questa composizione nasce dai suoni e dalle parole registrati e condivisi dai partecipanti. Insieme formano un collage acustico, che si muove tra ricordi e vissuti attuali. Soundweb propone l&apos;ascolto come metodo, per innerscare un processo di attenzione a ciò che di solito passa inosservato, in cui il suono è al contempo documento ed espressione.<br /><br />
+                  Questa composizione nasce dai suoni e dalle parole registrati e condivisi dai partecipanti. Insieme formano un collage acustico, che si muove tra ricordi e vissuti attuali. La composizione nasce dall&apos;ascolto come metodo per innestare un processo di attenzione a ciò che di solito passa inosservato, in cui il suono è al contempo documento ed espressione.<br /><br />
                   <span className="font-mono text-black not-italic text-xs">10 MIN</span>
                 </p>
               </div>
