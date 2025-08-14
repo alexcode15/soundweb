@@ -66,7 +66,7 @@ export default function YourSounds() {
       Here you can find individual sounds and words contributed by people connected to Vaglio, even if living elsewhere. Each one is part of a sonic thread that links the community across distance.
     </p>
     <p className="text-gray-500 font-serif italic">
-  Hai un legame con Vaglio, ma vivi altrove? Soundweb è un progetto in evoluzione: se desideri condividere un suono, un ricordo o una riflessione, puoi farlo qui. Ogni contributo arricchirà la raccolta di suoni e parole che unisce la comunità, anche a distanza.
+  La composizione nasce dall&#39;ascolto come metodo per innestare un processo di attenzione a ciò che di solito passa inosservato, in cui il suono è al contempo documento ed espressione.
     </p>
   </div>
   {/* Mobile title and text, centered and aligned */}
