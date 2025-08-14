@@ -147,7 +147,7 @@ export default function Home() {
           <div className="bg-transparent shadow-none p-0 max-w-2xl w-full relative animate-zoom-in flex items-center justify-center overflow-y-auto max-h-[90vh]">
             {/* Main content */}
             {selectedMedia && selectedMedia.type === "image" ? (
-              <img src={selectedMedia.src} alt={selectedMedia.alt || ""} className="max-h-[35vh] sm:max-h-[60vh] md:max-h-[80vh] max-w-[95vw] w-auto h-auto object-contain" />
+              <img src={selectedMedia.src} alt={selectedMedia.alt || ""} className="max-h-[50vh] sm:max-h-[60vh] md:max-h-[80vh] max-w-[95vw] w-auto h-auto object-contain" />
             ) : selectedMedia ? (
               <div className="flex flex-col items-center justify-center bg-black rounded-none max-h-[35vh] sm:max-h-[60vh] md:max-h-[80vh] max-w-[95vw] w-auto h-auto p-1 sm:p-4 md:p-8">
                 <audio controls autoPlay controlsList="nodownload noplaybackrate" src={selectedMedia.src} className="w-72 h-10 bg-black border border-gray-700 rounded shadow-none text-white mt-10" style={{outline: 'none'}} />
