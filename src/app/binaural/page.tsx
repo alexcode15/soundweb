@@ -21,22 +21,7 @@ function AudioPlayerBar({ isPlaying, onPlayPause, currentTime, duration, onBarCl
   const percent = duration ? (currentTime / duration) * 100 : 0;
   return (
     <div className="w-full flex items-center gap-4">
-      <button
-        className="w-10 h-10 flex items-center justify-center rounded-full bg-white border border-gray-300 shadow hover:scale-105 transition-transform ml-10"
-        onClick={onPlayPause}
-        aria-label={isPlaying ? "Pause" : "Play"}
-      >
-        {isPlaying ? (
-          <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
-            <rect x="6" y="6" width="6" height="20" rx="2" fill="#000" />
-            <rect x="20" y="6" width="6" height="20" rx="2" fill="#000" />
-          </svg>
-        ) : (
-          <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
-            <polygon points="8,6 26,16 8,26" fill="#000" />
-          </svg>
-        )}
-      </button>
+  {/* Play button removed, only bar and volume remain */}
       <span className="text-xs text-gray-500 w-12 text-right">{formatTime(currentTime)}</span>
       <div className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden cursor-pointer" onClick={onBarClick}>
         <div
@@ -193,7 +178,7 @@ export default function BinauralComposition() {
             </div>
             <audio
               ref={audioRef}
-              src="/binaural.wav"
+              src="/binaural1.mp3"
               className="hidden"
               onEnded={() => setIsPlaying(false)}
               onTimeUpdate={handleTimeUpdate}
@@ -235,7 +220,7 @@ export default function BinauralComposition() {
               </div>
               <audio
                 ref={audioRef}
-                src="/binaural.wav"
+                src="/binaural1.mp3"
                 className="hidden"
                 onEnded={() => setIsPlaying(false)}
                 onTimeUpdate={handleTimeUpdate}
