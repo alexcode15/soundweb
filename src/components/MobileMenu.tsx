@@ -35,12 +35,14 @@ export default function MobileMenu() {
       {open && (
         <div className="fixed inset-0 z-50 flex justify-end bg-transparent" onClick={() => setOpen(false)}>
           <video
+            src="/bg.mp4"
             autoPlay
             loop
             muted
             playsInline
+            preload="auto"
             className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
-            src="/bg.mp4"
+            style={{objectFit: 'cover', width: '100%', height: '100%'}}
           />
           <div className="bg-white w-64 h-full shadow-lg flex flex-col pt-8 px-6 relative z-10" onClick={e => e.stopPropagation()}>
             <button
