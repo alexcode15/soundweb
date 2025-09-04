@@ -1,8 +1,8 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { mockMedia } from "../components/MediaGrid";
-import AnimatedBlob from "../components/AnimatedBlob";
 
 export default function Home() {
   const menu = [
@@ -88,22 +88,7 @@ export default function Home() {
               </span>
             ))}
           </Link>
-          {/* Mobile menu bar */}
-          {/* Mobile menu bar: single row for all items, no wrap */}
-          <nav className="w-full flex justify-center items-center md:hidden mt-1 menu-entrance" style={{maxWidth: '100vw', margin: '0 auto', animationDelay: '1.2s'}}>
-            <div className="flex flex-nowrap justify-center gap-1 w-auto overflow-x-auto">
-              {menu.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-white text-xs font-light px-2 py-2 rounded underline-animation whitespace-nowrap"
-                  style={{ minWidth: 80, textAlign: 'center', background: 'none', boxShadow: 'none', border: 'none' }}
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          </nav>
+          {/* ...existing code... (mobile menu removed, only desktop menu remains) */}
           {/* Desktop menu bar */}
           <nav className="hidden md:flex flex-wrap gap-12 pr-4 mt-4 w-auto justify-end menu-entrance" style={{animationDelay: '1.2s'}}>
             {menu.map((item) => (
@@ -147,7 +132,7 @@ export default function Home() {
           <div className="bg-transparent shadow-none p-0 max-w-2xl w-full relative animate-zoom-in flex items-center justify-center overflow-y-auto max-h-[90vh]">
             {/* Main content */}
             {selectedMedia && selectedMedia.type === "image" ? (
-              <img src={selectedMedia.src} alt={selectedMedia.alt || ""} className="max-h-[50vh] sm:max-h-[60vh] md:max-h-[80vh] max-w-[95vw] w-auto h-auto object-contain" />
+              <Image src={selectedMedia.src} alt={selectedMedia.alt || ""} width={800} height={600} className="max-h-[50vh] sm:max-h-[60vh] md:max-h-[80vh] max-w-[95vw] w-auto h-auto object-contain" />
             ) : selectedMedia ? (
               <div className="flex flex-col items-center justify-center bg-black rounded-none max-h-[35vh] sm:max-h-[60vh] md:max-h-[80vh] max-w-[95vw] w-auto h-auto p-1 sm:p-4 md:p-8">
                 <audio controls autoPlay controlsList="nodownload noplaybackrate" src={selectedMedia.src} className="w-72 h-10 bg-black border border-gray-700 rounded shadow-none text-white mt-10" style={{outline: 'none'}} />

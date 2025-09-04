@@ -21,7 +21,25 @@ function AudioPlayerBar({ isPlaying, onPlayPause, currentTime, duration, onBarCl
   const percent = duration ? (currentTime / duration) * 100 : 0;
   return (
     <div className="w-full flex items-center gap-4">
-  {/* Play button removed, only bar and volume remain */}
+      {/* Play/Pause button added */}
+      <button
+        className="text-gray-700 hover:text-indigo-500 p-2 rounded-full focus:outline-none"
+        onClick={onPlayPause}
+        aria-label={isPlaying ? "Pause" : "Play"}
+      >
+        {isPlaying ? (
+          // Pause icon
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <rect x="6" y="5" width="4" height="14" rx="2" fill="#333" />
+            <rect x="14" y="5" width="4" height="14" rx="2" fill="#333" />
+          </svg>
+        ) : (
+          // Play icon
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <polygon points="6,4 20,12 6,20" fill="#333" />
+          </svg>
+        )}
+      </button>
       <span className="text-xs text-gray-500 w-12 text-right">{formatTime(currentTime)}</span>
       <div className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden cursor-pointer" onClick={onBarClick}>
         <div
@@ -65,6 +83,7 @@ export default function BinauralComposition() {
     { label: "Your Sounds", href: "/your-sounds" },
     { label: "Submit", href: "/submit" },
   ];
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -118,31 +137,10 @@ export default function BinauralComposition() {
     audioRef.current.volume = volume;
   }
   return (
-  <div className="fixed inset-0 z-50 bg-white text-black min-h-screen w-full overflow-y-auto">
+    <div className="relative bg-white text-black min-h-screen w-full overflow-y-auto">
       <header className="w-full flex flex-col items-center px-2 pt-2 pb-1 md:flex-row md:justify-between md:items-center md:pl-8 md:pr-12 md:pt-8 md:pb-8 md:gap-0">
         {/* Mobile: Centered title at top */}
-        <div className="w-full flex flex-col items-center md:hidden">
-          <Link href="/" className="text-black text-[2.2rem] font-serif font-bold tracking-widest mb-2 mt-2 text-center">
-            {"SOUNDWEB".split("").map((char, i) => (
-              <span key={i} className="inline-block">{char}</span>
-            ))}
-          </Link>
-        </div>
-        {/* Mobile menu bar: single row for all items, no wrap, clickable */}
-        <nav className="w-full flex justify-center items-center md:hidden mt-1 z-50 pointer-events-auto" style={{maxWidth: '100vw', margin: '0 auto'}}>
-          <div className="flex flex-nowrap justify-center gap-1 w-auto overflow-x-auto">
-            {menu.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-black text-xs font-light px-2 py-2 rounded underline-animation whitespace-nowrap"
-                style={{ minWidth: 80, textAlign: 'center', background: 'none', boxShadow: 'none', border: 'none' }}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
-        </nav>
+  {/* ...existing code... (no menu below the title) */}
         {/* Desktop: original title and menu */}
         <div className="hidden md:flex w-full justify-between items-center">
           <Link href="/" className="text-black text-4xl font-serif font-bold tracking-widest flex gap-1 mb-0 text-center w-auto">

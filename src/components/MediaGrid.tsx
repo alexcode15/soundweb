@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 
 interface MediaItem {
@@ -77,9 +78,11 @@ export default function MediaGrid() {
             onClick={() => handleZoom(idx)}
           >
             {item.type === "image" ? (
-              <img
+              <Image
                 src={item.src}
                 alt={item.alt || ""}
+                width={400}
+                height={300}
                 className="w-full h-56 object-cover group-hover:opacity-80 transition-opacity"
               />
             ) : (
@@ -115,7 +118,7 @@ export default function MediaGrid() {
             )}
             {/* Main content */}
             {zoomedIdx !== null && mockMedia[zoomedIdx].type === "image" ? (
-              <img src={mockMedia[zoomedIdx].src} alt={mockMedia[zoomedIdx].alt || ""} className="max-h-[80vh] max-w-[90vw] w-auto h-auto object-contain" />
+              <Image src={mockMedia[zoomedIdx].src} alt={mockMedia[zoomedIdx].alt || ""} width={800} height={600} className="max-h-[80vh] max-w-[90vw] w-auto h-auto object-contain" />
             ) : zoomedIdx !== null ? (
               <div className="flex flex-col items-center justify-center bg-black rounded-none max-h-[80vh] max-w-[90vw] w-auto h-auto p-8">
                 <audio controls autoPlay controlsList="nodownload noplaybackrate" src={mockMedia[zoomedIdx].src} className="w-72 h-10 bg-black border border-gray-700 rounded shadow-none text-white mt-10" style={{outline: 'none'}} />

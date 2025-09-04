@@ -50,7 +50,7 @@ export default function TestPage() {
     <main style={{ padding: "2rem", maxWidth: 600, margin: "0 auto" }}>
       <h1>Binaural Test</h1>
       <p>
-        Questa è una composizione binaurale. Indossa le cuffie per ascoltare l'audio.
+  Questa è una composizione binaurale. Indossa le cuffie per ascoltare l&apos;audio.
       </p>
       <audio
         ref={audioRef}
