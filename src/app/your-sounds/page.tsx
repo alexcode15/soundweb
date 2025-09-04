@@ -63,6 +63,7 @@ export default function YourSounds() {
   </div>
     </div>
     <MediaGrid />
+    <div className="h-16 md:h-32" />
   </main>
     </div>
   );

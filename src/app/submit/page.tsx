@@ -56,6 +56,9 @@ export default function Submit() {
               Submit
             </a>
           </div>
+
+          {/* Extra blank space for better visual balance at bottom */}
+          <div className="h-16 md:h-32" />
         </div>
       </main>
     </div>
